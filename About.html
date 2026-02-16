@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About • Harbor Ridge Supply Co.</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-badge">HR</span>
+        <span>Harbor Ridge Supply Co.</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card">
+        <p class="kicker">About us</p>
+        <h1 class="h1">Built for reliable sourcing and clean operations.</h1>
+        <p class="sub">
+          We are an independent Massachusetts-based retailer focused on sourcing authentic products
+          from reputable suppliers and delivering excellent customer experiences.
+        </p>
+
+        <div class="grid-3">
+          <div class="card">
+            <h2 class="h2">Our mission</h2>
+            <p class="small">Provide quality products at fair prices through responsible sourcing and consistent fulfillment.</p>
+          </div>
+          <div class="card">
+            <h2 class="h2">Our standards</h2>
+            <p class="small">We keep invoices, respect brand policies, and avoid restricted/counterfeit-risk supply chains.</p>
+          </div>
+          <div class="card">
+            <h2 class="h2">Our operations</h2>
+            <p class="small">FBM-first approach: inspect, pack well, ship fast, and communicate clearly.</p>
+          </div>
+        </div>
+
+        <hr class="sep" />
+
+        <p class="small">
+          Interested in working with us? Send vendor requirements and application details using our contact page.
+        </p>
+
+        <div class="btn-row">
+          <a class="btn primary" href="contact.html">Contact</a>
+          <a class="btn" href="index.html">Back to Home</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="y"></span> Harbor Ridge Supply Co.</div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
