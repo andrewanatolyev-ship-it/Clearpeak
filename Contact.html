@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact • Harbor Ridge Supply Co.</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-badge">HR</span>
+        <span>Harbor Ridge Supply Co.</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="card">
+          <p class="kicker">Contact</p>
+          <h1 class="h1">Vendor & wholesale inquiries</h1>
+          <p class="sub">
+            Send your vendor application, line sheet, MOQ info, and distributor requirements.
+          </p>
+
+          <!-- This form is just layout. To make it send, you'd connect it to Formspree, Google Forms, or a backend. -->
+          <form>
+            <label for="name">Name</label>
+            <input id="name" name="name" placeholder="Your name" />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" placeholder="you@company.com" />
+
+            <label for="company">Company / Brand</label>
+            <input id="company" name="company" placeholder="Brand or distributor name" />
+
+            <label for="msg">Message</label>
+            <textarea id="msg" name="msg" placeholder="MOQ, catalog, application steps, terms, and any requirements..."></textarea>
+
+            <div class="btn-row">
+              <button class="btn primary" type="button">Send Message</button>
+              <a class="btn" href="index.html">Back to Home</a>
+            </div>
+            <p class="note">
+              Note: This sample form doesn’t send anywhere yet. If you want, I’ll give you the easiest free option to make it send emails.
+            </p>
+          </form>
+        </div>
+
+        <div class="card">
+          <h2 class="h2">Business details</h2>
+          <p class="small">
+            Harbor Ridge Supply Co.<br/>
+            Massachusetts, USA<br/>
+            Email: sales@yourdomain.com
+          </p>
+          <hr class="sep" />
+          <p class="small">
+            <b>What we can provide:</b><br/>
+            • EIN + business registration info<br/>
+            • MA resale/tax documentation (as applicable)<br/>
+            • Marketplace seller profile verification (as needed)<br/>
+            • Consistent reorders on proven SKUs
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="y"></span> Harbor Ridge Supply Co.</div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
